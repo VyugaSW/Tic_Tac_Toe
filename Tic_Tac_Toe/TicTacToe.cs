@@ -93,6 +93,7 @@ namespace Tic_Tac_Toe
                     Console.Clear();
                     Console.WriteLine(field.ShowField());
 
+                    Console.WriteLine($"{ListOfPlayers[i].Name} is making a step!");
                     if (field.UpdateField(ListOfPlayers[i].Step(), ListOfPlayers[i].Sign) == 0)
                     {
                         if (ListOfPlayers[i] is Human)
